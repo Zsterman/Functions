@@ -57,12 +57,6 @@ function add(p, p2){
 
 add(3,2);
 
-
-
-
-
-
-
 ////////////////// PROBLEM 5 ////////////////////
 /*
   Write a function called nameCheck that takes in a name parameter.
@@ -221,7 +215,11 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function upperCaseLog(string){
+  console.log(string.toUpperCase())
+}
 
+upperCaseLog(sampleString)
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -233,6 +231,19 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+//CODE HERE
+
+function emailCheck(email){
+email = String(email).trim()
+  if(email.includes('@')){
+    return 'Email Verified'
+  } else {
+    return 'Must Provide Valid Email Address'
+  }
+}
+
+let conCheck = emailCheck('zacharysterman@gmail.com')
+console.log(conCheck)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -241,6 +252,14 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function buyer(g){
+  return g / 3
+}
+let totalFrogs = buyer(3)
+
+console.log(totalFrogs)
+
+
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -249,7 +268,18 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function buyer2(g){
+  if (g % 3 === 0){
+  return g / 3
+  } else if ((g - 1) % 3 === 0) {
+    return (g - 1) / 3
+  } else if ((g - 2) % 3 === 0) {
+    return (g - 2) / 3 
+  }
+}
+let totalFrogs2 = buyer2(4)
 
+console.log(totalFrogs2)
 
 ////////////////// PROBLEM 15 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -258,6 +288,11 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+// function isAscending(sampleArray) {
+//   return sampleArray.every(function (x, i) {
+//       return i === 0 || x >= sampleArray[i - 1];
+//   });
+// }
 
 
 ////////////////// PROBLEM 16 ////////////////////
